@@ -1,0 +1,4 @@
+# always use mode =1
+
+python spr_application_layercam_multilayer.py --cfg cfg/configuration_layercam_multilayer_cam.yaml --mode 1 --eval_mode 1
+

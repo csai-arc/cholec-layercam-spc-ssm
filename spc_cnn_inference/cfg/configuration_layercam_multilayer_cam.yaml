@@ -1,0 +1,23 @@
+TRAIN:
+  MODEL_NAME: "effnetv2_s"
+  MODEL_PATH_MODE1: "/mnt/sda/Surgical_videos_analysis/phase2_ss/code_repo/SPR_XAI/classification/classification_training_package/checkpoints/wdc/effnetv2_s_exp8/model_best_trail_0_epoch_4.pth.tar"
+  MODEL_PATH_MODE2: "./models/model_best_mode2.pth.tar"
+DATA:
+  IMG_WIDTH: 427
+  IMG_HEIGHT: 240
+  MEAN: [0.5, 0.5, 0.5]
+  STD: [0.5, 0.5, 0.5]
+MODEL:
+  NUM_CLASSES: 7
+
+INPUT_PATH: "./input"  
+INPUT_EVAL_PATH: "/mnt/sdb/datasets/cholec80_imagefolder/cholec80/infer_66"
+OUT_MODE1_RES_PTH: "./output_mode1_layercam_multilayer_cam/classification_out_mode_1.xlsx"
+OUT_MODE2_RES_PTH: "./output_mode2/classification_out_mode_2.xlsx"
+OUT_EVAL_MODE1_RES_PTH: "./output_mode1_layercam_multilayer_cam/classification_out_mode_1.xlsx"
+OUT_EVAL_MODE2_RES_PTH: "./output_mode2/classification_out_mode_2.xlsx"
+OUT_EVAL_MODE1_PTH: "./output_mode1_layercam_multilayer_cam/"
+CLASS_NAMES: [
+"0", "1", "2", "3", "4", "5", "6"
+]
+GRAD_CAM_FLAG: 1
