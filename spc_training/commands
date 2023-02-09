@@ -1,0 +1,1 @@
+python classification_training_layercam.py -a effnetv2_s --data <path to data> --epochs 5 --gpu-id 0 -c <path where checkpoints to be saved> --train-batch 10 --test-batch 1 --weights_load <path to pretrained weights> --optuna_study_db sqlite:///./<path where optuna db to be saved>
